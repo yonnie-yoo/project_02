@@ -1,0 +1,17 @@
+# AMUSE 클론 사이트
+AMUSE 공식 사이트를 html, css 기본속성으로 클론한 프로젝트
+## 특징
+- 고정페이지 1440px로 제작
+### 파일구조
+```
+┌─ images           이미지파일
+├─css               css파일
+├─index_amuse_main  메인 페이지
+└─amuse_new         신상품 페이지
+```
+## 기술 스택
+- html5 : 시맨틱 마크업
+- css3 : position, flex, 애니메이트
+### 비고
+- 메인 페이지(index_amuse_main)에서 배지 NEW 부분을 클릭하면 신상품 페이지(amuse_new)로 이동
+- 메인 페이지 및 신상품 페이지에서 최상단 로고를 클릭하면 메인 페이지로 이동

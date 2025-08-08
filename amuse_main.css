@@ -1,0 +1,258 @@
+        /* 메인 슬라이드 */
+        .main_slide{
+            position: relative;
+            width: 1440px;
+            height: 600px;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* 배지 메뉴 1 */
+        .badge_g{
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+        }
+        .badge{
+            width: 1000px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .badge_01{
+            display: inline-block;
+            text-align: center;
+            margin: 0;
+        }
+        .badge_01 img{
+            width: 100px;
+        }
+        .badge_01 :hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:visited{
+            color: black;
+        }
+
+        /* NEW 슬라이드 */
+        .new_slide{
+            text-align: center;
+            margin: 50px 0;
+        }
+        .new_slide_g{
+            position: relative;
+            height: 100%;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: center;
+
+        }
+        .new_slide_g swiper-container {
+        width: 1000px;
+        height: 100%;
+        }
+
+        .new_slide_g swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #ffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .new_slide_g swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+        .new_slide_g swiper-slide>figure{
+            margin: 10px 10px 30px 10px;
+        }
+        .new_fg{
+            word-break: keep-all;
+            text-align: left;
+        }
+        .new_fg s{
+            color: gray;
+        }
+
+        /* BEST 슬라이드 나머지는 new와 같은 class 적용*/
+        .best_slide{
+        text-align: center;
+        margin: 50px 0;
+        }
+
+        /* PICK 슬라이드 */
+        .pick_slide{
+            text-align: center;
+            margin: 50px 0;
+        }
+        .pick_slide_g {
+        position: relative;
+        height: 100%;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        }
+
+        .pick_slide_g swiper-container {
+        width: 1000px;
+        height: 100%;
+        }
+
+        .pick_slide_g swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #ffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .pick_slide_g swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        .pick_slide_g swiper-container {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .pick_r{
+            object-fit: cover;
+            width: 500px;
+        }
+        .pick_r figure{
+            display: inline-block;
+            width: 200px;
+            margin: 0;
+        }
+        .pick_r figure>img{
+            width: 200px;
+        }
+        .pick_l{
+            width: 500px;
+        }
+
+        /* 혜택 배너 */
+        .promo_banner{
+        position: relative;
+        height: 100%;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+        }
+
+        swiper-container {
+        width: 100%;
+        height: 100%;
+        }
+
+        swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+
+        /* vegan */
+        .vegan{
+            width: 100%;
+            height: 600px;
+            background-color: rgb(134, 245, 208);
+            text-align: center;
+        }
+        .vegan_txt{
+            padding: 20px 0;
+        }
+        .vegan_txt img{
+            width: 60px;
+        }
+        .vegan_box{
+            display: flex;
+            justify-content: space-around;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        .vegan_box img{
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        /* line up */
+        .lineup{
+            text-align: center;
+        }
+        .lineup_gallery{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 1440px;
+            gap: 10px;
+        }
+        .lineup_gallery figure{
+            margin: 0;
+        }
+        .lineup_gallery figure img{
+            width: 280px;
+        }
+
+        .button_more{
+            width: 100px; height: 50px;
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .test{
+            display: flex;
+            justify-content: center;
+        }

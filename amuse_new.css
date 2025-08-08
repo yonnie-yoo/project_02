@@ -1,0 +1,181 @@
+section{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* 탭 */
+.new_top{
+    padding-top: 160px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.new_top figure{
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+}
+.new_top img{
+    width: 60px;
+}
+.new_top figure:hover{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+/* 이미지 갤러리 */
+
+hr{
+    border: 1px solid black;
+}
+.filter{
+    font-size: 15px;
+    text-align: right;
+    margin: 20px 0;
+}
+.filter span{
+    margin: 0 10px;
+    color: gray;
+}
+.filter span:hover{
+    color: black;
+    cursor: pointer;
+}
+
+/* 이미지 갤러리 */
+.img_gallery{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img_group{
+    width: 240px;
+    margin: 0 ;
+    font-size: 15px;
+    word-break: keep-all;
+    padding: 20px 5px;
+    position: relative;
+}
+.amount1{
+    font-weight: bold;
+}
+.amount2{
+    color: darkgray;
+    font-size: 13px;}
+
+    /* 장바구니 아이콘 관련 */
+    .cart{
+        opacity: 0;
+    }
+    .img_group:hover .cart, .img_group:hover .discount{
+        opacity: 1;
+    }
+    .product{
+        width: 100%;
+    }
+
+    /* 색상 설명 관련 */
+    .palette{
+        padding: 5px 0;
+    }
+        /* 베이스 */
+        .base, .eye{
+            display: inline-block;
+            width: 20px; height: 20px;
+            border-radius: 50% ;
+            overflow: hidden;
+        }
+        .color{
+            visibility: hidden;
+        }
+        .base:nth-child(1){
+            background-color: #f4d9d0;
+        }
+        .base:nth-child(2){
+            background-color: #eed2c4;
+        }
+        .base:nth-child(3){
+            background-color: #efd4c0;
+        }
+        .base:nth-child(4){
+            background-color: #e8c6aa;
+        }
+        .base:nth-child(5){
+            background-color: #e8c6a7;
+        }        
+
+        /* 눈 */
+        .eye:nth-child(1){
+        background-color: #ffc2b2;
+        }
+        .eye:nth-child(2){
+            background-color: #ffa1bb;
+        }
+        .eye:nth-child(3){
+            background-color: #d89e8f;
+        }
+        .eye:nth-child(4){
+            background-color: #f0a9da;
+        }
+
+    /* 할인 포인트 관련 */
+    .discount{
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        width: 30px; height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        position: absolute;
+        top: 25px;
+        right: 10px;
+        opacity: 0;
+    }
+    .discount span{
+        line-height: 15px;}
+
+    /* 선물, 품절 표시 관련 */
+    .event{
+        background-color: rgb(255, 115, 0);
+        color: white;
+        width: 50px; height: 20px;
+        border-radius: 10px;
+        font-size: 12px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    /* 품절 이미지 표시 관련 */
+    .soldout{
+        position: absolute;
+        width: 240px;
+        height: 240px;
+        background-color: rgba(169, 169, 169, 0.8);
+        z-index: 98;
+        top: 20px;
+    }
+    .soldout span{
+        position: absolute;
+        font-size: 50px;
+        color: white;
+        transform: rotate(-45deg);
+        width: 100%;
+        text-align: center;
+        top: 30%;
+        left: 0%;
+    }
+
+table{
+    display: flex;
+    border-collapse: collapse;
+    justify-content: center;
+    margin: 30px 0;
+}
+table td{
+    padding: 10px;
+    border: 1px solid gray;
+    width: 20px;
+    text-align: center;
+}

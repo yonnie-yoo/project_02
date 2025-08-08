@@ -1,0 +1,168 @@
+        /* 공통서식 */
+        body{
+            border: 1px solid black;
+            margin: 0 auto;
+            width: 1440px;
+        }
+        
+        /* 상단 고정 */
+        .top_g{
+            position: fixed;
+            width: 1440px;
+            z-index: 99;
+        }
+        /* 최상단 광고 배너 */
+
+        .top_01{
+        background-color: #f5cabf;
+        text-align: center; 
+        position: relative;
+        width: 100%;
+        height: 45px;
+        }
+
+        .top_01 p {
+        position: absolute;
+        width: 100%;
+        padding: 10px 0; margin: 0;
+        text-align: center;
+        opacity: 0;
+        }
+
+        .top_01-1 {
+        animation: fadeA 4s ease-in-out infinite;
+        }
+
+        .top_01-2 {
+        animation: fadeB 4s ease-in-out infinite;
+        }
+
+        /* 기존 문장이 먼저 보이고 사라졌다가 다시 보임 */
+        @keyframes fadeA {
+        0%   { opacity: 1; }
+        40%  { opacity: 1; }
+        50%  { opacity: 0; }
+        90%  { opacity: 0; }
+        100% { opacity: 1; }
+        }
+
+        /* 다른 문장은 중간에 등장했다가 사라짐 */
+        @keyframes fadeB {
+        0%   { opacity: 0; }
+        40%  { opacity: 0; }
+        50%  { opacity: 1; }
+        90%  { opacity: 1; }
+        100% { opacity: 0; }
+        }
+
+        /* 상단 메뉴 */
+        .top_02{
+            display: flex;
+            width: 1400px;
+            padding:  20px;
+            justify-content: space-between;
+            background-color: transparent;
+            position: relative;
+            vertical-align: middle;
+            }
+
+        .menu_b, .main_logo, .main_sns {
+            display: flex;
+            align-items: center;
+        }
+        .main_sns img{
+            padding: 0 10px;
+        }
+        .lang_part{
+            display: inline-block;
+            list-style: none;
+            position: relative;
+            margin: 0; padding: 0;
+        }
+        .lang_list{
+            list-style: none;
+            padding: 0;
+            display: none;
+            text-align: center;
+            position: absolute;
+            font-size: 13px;
+        }
+        .lang_part:hover .lang_list{
+            display: block;
+            background-color: white;
+        }
+        .coupon{
+            background-color: aqua;
+            font-size: 12px;
+            height: 20px;
+            padding: 0 20px;
+            border-radius: 20px;
+            position: absolute;
+            top: 60px;
+            right: 15px;
+            animation: cssAnimation_0 1.3s infinite ease-in-out;
+        }
+
+            /* 애니메이트 효과 */
+            @keyframes cssAnimation_0 {
+            0%   { transform: translateY(0); }
+            20%  { transform: translateY(-4px); }
+            40%  { transform: translateY(0); }
+            60%  { transform: translateY(-2px); }
+            80%  { transform: translateY(0); }
+            100% { transform: translateY(0); }
+            }
+            
+        /* 하단 */
+        footer{
+            background-color: lightgray;
+            padding-bottom: 30px;
+        }
+        .footer_g{
+            width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .f_left{
+            width: 330px;
+            height: 230px;
+            padding-top: 20px;
+        }
+        .ico_sns img{
+            width: 30px;
+            padding: 20px;
+        }
+
+        .f_mid{
+            width: 330px;
+            height: 230px;
+            padding-top: 20px;
+        }
+        .f_mid span{
+            font-size: 20px;
+        }
+        .f_mid hr{
+            width: 20px;
+            border: 2px solid black;
+            margin: 10px 0;
+        }
+
+        .f_txtb p{
+            margin: 0;
+            padding: 5px 0;
+        }
+
+        .f_right{
+            width: 330px;
+            height: 250px;
+            padding: 0; margin: 0;
+        }
+        .f_right li{
+            list-style: none;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+
